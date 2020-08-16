@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "custom_join_message_fabric",
+  "version": "${version}",
+
+  "name": "Custom Join Message",
+  "description": "Allows you to customize join messages",
+  "authors": [
+    "Orangemonkey68",
+    "UpcraftLP"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.orangemonkey68.CustomJoinMessageFabric.CustomJoinMessageMod"
+    ]
+  },
+  "mixins": [
+    "custom_join_message_fabric.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
